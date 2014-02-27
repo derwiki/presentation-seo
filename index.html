@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Presentation title</title>
+    <meta content='Adam Derewecki' name='author' />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+    <link href='reveal/css/reset.css' rel='stylesheet' />
+    <link href='reveal/css/main.css' rel='stylesheet' />
+    <link href='highlight/src/styles/solarized_dark.css' rel='stylesheet' />
+    <link href='causes.css' rel='stylesheet' />
+    <!-- overrides for default reveal styles -->
+    <style type='text/css'>
+      /*<![CDATA[*/
+        .reveal pre {
+          font-size: 24px;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body id='causes'>
+    <div class='reveal'>
+      <div class='slides'>
+        <section>
+          <h2>Basic SEO</h2>
+          <h3>
+            <a href='//github.com/derwiki'>github.com/derwiki</a>
+          </h3>
+          <br />
+          <h5>presented by</h5>
+          <h4>@derwiki</h4>
+          <h4>
+            Founder and CEO /
+            <a href='//www.cameralends.com'>CameraLends</a>
+          </h4>
+        </section>
+        <section>
+          <h2>Ewww, marketing/business words!</h2>
+          <h4>Search Engine Optimization (SEO)</h4>
+          <ul>
+            <li class='fragment'>
+              Making sure Google understands your site
+            </li>
+            <li class='fragment'>
+              Strategies to find what people are searching for
+            </li>
+            <li class='fragment'>
+              Raising your authority with backlinks
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>If you build it..</h2>
+          <ul>
+            <li class='fragment'>
+              ... they probably won't come
+            </li>
+            <li class='fragment'>
+              Hacker News/Reddit/TechCrunch is not a customer acquisition plan
+            </li>
+            <li class='fragment'>
+              Everything's more fun with friends
+            </li>
+            <li class='fragment'>
+              Let's learn you how to make friends for your web site
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>In your layout</h2>
+          <ul>
+            <li class='fragment'>
+              Title tags
+            </li>
+            <li class='fragment'>
+              Should contain your keyword phrases
+            </li>
+            <li class='fragment'>
+              Add page specific keyword phrases
+            </li>
+            <li class='fragment'>
+              bad: "ApartmentList | Rent apartments across the United States"
+            </li>
+            <li class='fragment'>
+              good "56 Top Apartments in San Francisco, CA for Rent ASAP!"
+            </li>
+            <li class='fragment'>
+              obviously, s/San Francisco/$CITY/
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>In your layout</h2>
+          <ul>
+            <li class='fragment'>
+              h1 tags
+            </li>
+            <li class='fragment'>
+              Should contain your keyword phrases
+            </li>
+            <li class='fragment'>
+              Add page specific keyword phrases
+            </li>
+            <li class='fragment'>
+              There should be only
+              <i>one</i>
+              h1 tag/page
+            </li>
+            <li class='fragment'>
+              bad: "ApartmentList | Rent apartments across the United States"
+            </li>
+            <li class='fragment'>
+              good "Apartments for rent near San Francisco, CA (61 buildings)"
+            </li>
+            <li class='fragment'>
+              notice similarities between title and h1?
+            </li>
+            <li class='fragment'>
+              when in doubt, set title=h1
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>In your layout</h2>
+          <ul>
+            <li class='fragment'>
+              meta description
+            </li>
+            <li class='fragment'>
+              Don't bother keyword phrase stuffing here
+            </li>
+            <li class='fragment'>
+              One goal: get the user to click through
+            </li>
+            <li class='fragment'>
+              Destination page should be not be a surprise
+            </li>
+            <li class='fragment'>
+              i.e. description shouldn't say "rent condos" and then only try to
+              sell houses
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Landing Pages / Long Tail</h2>
+          <ul>
+            <li class='fragment'>
+              Build specific landing pages for commonly searched for variations
+            </li>
+            <li class='fragment'>
+              i.e. CameraLends has /canon, /canon/cameras.
+            </li>
+            <li class='fragment'>
+              even better would be /canon/cameras/san-francisco
+            </li>
+            <li class='fragment'>
+              "Rent cameras" might be hard to compete on, even if it brings
+              200 visitors/day
+            </li>
+            <li class='fragment'>
+              The "long tail" in aggregate of "rent canon 5d mark ii san
+              francisco", "rent red one los angeles" and others add up
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>URL Structure</h2>
+          <ul>
+            <li class='fragment'>
+              Like title and h1 tags, URL tokens imply hints about content
+            </li>
+            <li class='fragment'>
+              Use semantic naming when possible
+            </li>
+            <li class='fragment'>
+              bad: '/gear/15'
+            </li>
+            <li class='fragment'>
+              good: '/gear/canon-5d-mark-ii'
+            </li>
+            <li class='fragment'>
+              BEST: '/rent/canon-5d-mark-ii/san-francisco/nob-hill'
+            </li>
+            <li class='fragment'>
+              The practice of adding "slugs" to URLs is very common
+            </li>
+            <li class='fragment'>
+              Additional benefit: obfuscates auto-increment IDs
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Instructing Googlebot</h2>
+          <ul>
+            <li class='fragment'>
+              sitemap.xml (or collection of sitemaps)
+            </li>
+            <li class='fragment'>
+              robots.txt for allow/disallow
+            </li>
+            <li class='fragment'>
+              Why would you disallow?
+            </li>
+            <li class='fragment'>
+              If you have 100,000 pages but only 50 entry points, you want
+              "link juice" concentrated more in the entry points
+            </li>
+            <li class='fragment'>
+              nofollow / robots.txt disallow will prevent Google from indexing
+              low-SEO-value pages or pages that you never want GoogleBot to see
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Good Web Practices</h2>
+          <ul>
+            <li class='fragment'>
+              SEO has a bad rap
+            </li>
+            <li class='fragment'>
+              Really, it's encouraging good and sane web development practices
+            </li>
+            <li class='fragment'>
+              Try writing a script that extracts title, h1, and URL for your 50
+              top-viewed web pages
+            </li>
+            <li class='fragment'>
+              Mine was embarassing :)
+            </li>
+            <li class='fragment'>
+              Really easy to fix, pays for itself over time in free traffic
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Backlinks: why should we trust you?</h2>
+          <ul>
+            <li class='fragment'>
+              Every search engine sucked in the 90s
+            </li>
+            <li class='fragment'>
+              Google got it right with PageRank
+            </li>
+            <li class='fragment'>
+              The more web sites that link to you, the higher your
+              authority
+            </li>
+            <li class='fragment'>
+              If web sites link to you for a specific phrase, i.e. 'camera
+              rental', then you have higher authority for that phrase
+            </li>
+            <li class='fragment'>
+              The higher the authority of the domain with the link to you,
+              the more weight it carries
+            </li>
+            <li class='fragment'>
+              One "good" backlink (30+ CF) is better than hundreds of low CF
+              scores
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Hands on with Market Samurai</h2>
+          <ul>
+            <li class='fragment'>
+              Keyword phrase exploration/generation
+            </li>
+            <li class='fragment'>
+              Analyzing SEO value of phrases (general, long tail)
+            </li>
+            <li class='fragment'>
+              Assessing competition for a particular phrase
+            </li>
+            <li class='fragment'>
+              Reverse-engineering why your competitors are ranking so high
+            </li>
+            <li class='fragment'>
+              ... and use that knowledge to increase your own ranking.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Basic SEO</h2>
+          <h3>
+            <a href='//github.com/derwiki'>github.com/derwiki</a>
+          </h3>
+          <br />
+          <h5>presented by</h5>
+          <h4>@derwiki</h4>
+          <h4>
+            Founder and CEO /
+            <a href='//www.cameralends.com'>CameraLends</a>
+          </h4>
+        </section>
+      </div>
+      <!--
+        required for correct operation of reveal.js,
+        even if we don't want controls
+      -->
+      <aside class='controls'>
+        <a class='left' href='#'>&#x25c4;</a>
+        <a class='right' href='#'>&#x25ba;</a>
+        <a class='up' href='#'>&#x25b2;</a>
+        <a class='down' href='#'>&#x25bc;</a>
+      </aside>
+    </div>
+    <script src='reveal/js/reveal.min.js'></script>
+    <script src='highlight/build/highlight.pack.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        Reveal.initialize({
+          controls: false,
+          progress: false,
+          history: true,
+          mouseWheel: false,
+          rollingLinks: false,
+        });
+        hljs.initHighlightingOnLoad();
+      //]]>
+    </script>
+  </body>
+</html>
