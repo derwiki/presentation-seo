@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}/
     %title Presentation title
-    %meta{:content => "Causes Engineering", :name => "author"}/
+    %meta{:content => "Adam Derewecki", :name => "author"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "reveal/css/reset.css", :rel => "stylesheet"}/
     %link{:href => "reveal/css/main.css", :rel => "stylesheet"}/
@@ -19,84 +19,202 @@
       .slides
 
         %section
-          %h2 JohnHenry Rails toolkit
+          %h2 Basic SEO
           %h3
-            %a{ href: '//github.com/derwiki/johnhenry' }
-              github.com/derwiki/johnhenry
+            %a{ href: '//github.com/derwiki' } github.com/derwiki
           %br
           %h5 presented by
           %h4 @derwiki
-
+          %h4
+            Founder and CEO /
+            %a{ href: '//www.cameralends.com' } CameraLends
 
         %section
-          %h2 We're going to keep the slides short
+          %h2 Ewww, marketing/business words!
+          %h4 Search Engine Optimization (SEO)
           %ul
             %li.fragment
-              Slides kinda suck
+              Making sure Google understands your site
             %li.fragment
-              I want to build a web site with you
+              Strategies to find what people are searching for
             %li.fragment
-              Slides kinda suck
+              Raising your authority with backlinks
 
         %section
-          %h2 JohnHenry Rails will save you time building web sites
+          %h2 If you build it..
           %ul
             %li.fragment
-              I've got 63 projects on my personal Heroku
+              \... they probably won't come
             %li.fragment
-              Each new site was
-              %i slightly
-              better in some way
+              Hacker News/Reddit/TechCrunch is not a customer acquisition plan
             %li.fragment
-              Old projects never get backported
+              Everything's more fun with friends
             %li.fragment
-              Continually re-inventing the wheel
+              Let's learn you how to make friends for your web site
+
 
         %section
-          %h2 JohnHenry Rails is a "Hackathon Jumpstart"
+          %h2 In your layout
           %ul
             %li.fragment
-              Rails engine
+              Title tags
             %li.fragment
-              Provides Bootstrap, Devise, Stripe, Google Analytics, etc
+              Should contain your keyword phrases
             %li.fragment
-              Responsive login templates, payment forms, sign up forms
+              Add page specific keyword phrases
             %li.fragment
-              All the boilerplate you needed to build anyway,
-              up and running in &lt; 10 minutes
+              bad: "ApartmentList | Rent apartments across the United States"
+            %li.fragment
+              good "56 Top Apartments in San Francisco, CA for Rent ASAP!"
+            %li.fragment
+              obviously, s/San Francisco/$CITY/
 
         %section
-          %h2 What you start with
-          %img{ src: 'https://raw.github.com/derwiki/johnhenry/master/screenshot-johnhenry.jpg', style: 'width: 100%;' }
-
-        %section
-          %h2 Heard of Kickoff Labs?
-          %img{ src: "http://i.imgur.com/0yxzpp6.jpg", style: 'width: 100%;' }
-
-        %section{ style: 'text-align: center;' }
-          %img{ src: "http://i.imgur.com/uNdjiqA.jpg", style: 'height: 500px;' }
-
-        %section
-          %h3 github.com/derwiki/johnhenry
+          %h2 In your layout
           %ul
             %li.fragment
-              Detailed instructions
+              h1 tags
             %li.fragment
-              Short screencast
+              Should contain your keyword phrases
             %li.fragment
-              derewecki@gmail.com
+              Add page specific keyword phrases
+            %li.fragment
+              There should be only
+              %i one
+              h1 tag/page
+            %li.fragment
+              bad: "ApartmentList | Rent apartments across the United States"
+            %li.fragment
+              good "Apartments for rent near San Francisco, CA (61 buildings)"
+            %li.fragment
+              notice similarities between title and h1?
+            %li.fragment
+              when in doubt, set title=h1
 
         %section
-          %h3 Live examples
+          %h2 In your layout
           %ul
             %li.fragment
-              JohnHenryRails.com
+              meta description
             %li.fragment
-              PaidCodeReview.com
+              Don't bother keyword phrase stuffing here
             %li.fragment
-              DailySiteSnap.com
+              One goal: get the user to click through
             %li.fragment
-              EtsyTools.biz
+              Destination page should be not be a surprise
+            %li.fragment
+              i.e. description shouldn't say "rent condos" and then only try to
+              sell houses
+
+        %section
+          %h2 Landing Pages / Long Tail
+          %ul
+            %li.fragment
+              Build specific landing pages for commonly searched for variations
+            %li.fragment
+              i.e. CameraLends has /canon, /canon/cameras.
+            %li.fragment
+              even better would be /canon/cameras/san-francisco
+            %li.fragment
+              "Rent cameras" might be hard to compete on, even if it brings
+              200 visitors/day
+            %li.fragment
+              The "long tail" in aggregate of "rent canon 5d mark ii san
+              francisco", "rent red one los angeles" and others add up
+
+        %section
+          %h2 URL Structure
+          %ul
+            %li.fragment
+              Like title and h1 tags, URL tokens imply hints about content
+            %li.fragment
+              Use semantic naming when possible
+            %li.fragment
+              bad: '/gear/15'
+            %li.fragment
+              good: '/gear/canon-5d-mark-ii'
+            %li.fragment
+              BEST: '/rent/canon-5d-mark-ii/san-francisco/nob-hill'
+            %li.fragment
+              The practice of adding "slugs" to URLs is very common
+            %li.fragment
+              Additional benefit: obfuscates auto-increment IDs
+
+        %section
+          %h2 Instructing Googlebot
+          %ul
+            %li.fragment
+              sitemap.xml (or collection of sitemaps)
+            %li.fragment
+              robots.txt for allow/disallow
+            %li.fragment
+              Why would you disallow?
+            %li.fragment
+              If you have 100,000 pages but only 50 entry points, you want
+              "link juice" concentrated more in the entry points
+            %li.fragment
+              nofollow / robots.txt disallow will prevent Google from indexing
+              low-SEO-value pages or pages that you never want GoogleBot to see
+
+        %section
+          %h2 Good Web Practices
+          %ul
+            %li.fragment
+              SEO has a bad rap
+            %li.fragment
+              Really, it's encouraging good and sane web development practices
+            %li.fragment
+              Try writing a script that extracts title, h1, and URL for your 50
+              top-viewed web pages
+            %li.fragment
+              Mine was embarassing :)
+            %li.fragment
+              Really easy to fix, pays for itself over time in free traffic
+
+        %section
+          %h2 Backlinks: why should we trust you?
+          %ul
+            %li.fragment
+              Every search engine sucked in the 90s
+            %li.fragment
+              Google got it right with PageRank
+            %li.fragment
+              The more web sites that link to you, the higher your
+              authority
+            %li.fragment
+              If web sites link to you for a specific phrase, i.e. 'camera
+              rental', then you have higher authority for that phrase
+            %li.fragment
+              The higher the authority of the domain with the link to you,
+              the more weight it carries
+            %li.fragment
+              One "good" backlink (30+ CF) is better than hundreds of low CF
+              scores
+
+        %section
+          %h2 Hands on with Market Samurai
+          %ul
+            %li.fragment
+              Keyword phrase exploration/generation
+            %li.fragment
+              Analyzing SEO value of phrases (general, long tail)
+            %li.fragment
+              Assessing competition for a particular phrase
+            %li.fragment
+              Reverse-engineering why your competitors are ranking so high
+            %li.fragment
+              \... and use that knowledge to increase your own ranking.
+
+        %section
+          %h2 Basic SEO
+          %h3
+            %a{ href: '//github.com/derwiki' } github.com/derwiki
+          %br
+          %h5 presented by
+          %h4 @derwiki
+          %h4
+            Founder and CEO /
+            %a{ href: '//www.cameralends.com' } CameraLends
 
       /
         required for correct operation of reveal.js,
