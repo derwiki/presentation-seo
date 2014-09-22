@@ -18,5 +18,6 @@ Presented by Adam Derewecki (adam@cameralends.com):
         bundle
 
 1. Build the presentation and open it:
+
         bundle exec rake
         open index.html
