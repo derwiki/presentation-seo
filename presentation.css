@@ -1,32 +1,32 @@
-#causes {
+#presentation {
   background: #f8f8f8;
   color: #515151;
   font-family: 'Montserrat', sans-serif;
   font-size: 33px;
 }
 
-#causes a {
+#presentation a {
   color: #15b5d2;
 }
 
-#causes .reveal {
+#presentation .reveal {
   background-size: 100% 10px;
   background: url(assets/causes-header.png);
   height: 10px;
 }
 
-#causes .reveal .slides {
+#presentation .reveal .slides {
   text-align: left;
 }
-#causes .reveal .slides li {
+#presentation .reveal .slides li {
   margin-bottom: 12px;
 }
 
-#causes .reveal h1,
-#causes .reveal h2,
-#causes .reveal h3,
-#causes .reveal h4,
-#causes .reveal h5 {
+#presentation .reveal h1,
+#presentation .reveal h2,
+#presentation .reveal h3,
+#presentation .reveal h4,
+#presentation .reveal h5 {
   color: #15b5d2;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .02em;
@@ -37,21 +37,21 @@
   text-transform: none;
 }
 
-#causes .reveal h1 {
+#presentation .reveal h1 {
   font-size: 99px;
   text-shadow: none;
 }
 
-#causes .reveal .slides h5 {
+#presentation .reveal .slides h5 {
   font-size: 24px;
   margin-bottom: 8px;
 }
 
-#causes .reveal ul {
+#presentation .reveal ul {
   margin-left: 63px;
 }
 
-#causes .reveal section img.logo {
+#presentation .reveal section img.logo {
   background-color: inherit;
   border: 0;
   bottom: 0;
@@ -60,4 +60,12 @@
   box-shadow: none;
   position: fixed;
   width: 200px;
+}
+
+#presentation section img {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
